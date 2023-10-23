@@ -1,10 +1,10 @@
 import torch
 
-from mpc import mpc
-from mpc.mpc import GradMethods, QuadCost
-from mpc.dynamics import NNDynamics
-import mpc.util as eutil
-from mpc.env_dx import pendulum, cartpole
+# from mpc import mpc
+from mpc.mpc.mpc import GradMethods, QuadCost
+from mpc.mpc.dynamics import NNDynamics
+import mpc.mpc.util as eutil
+from mpc.mpc.env_dx import pendulum, cartpole
 
 import numpy as np
 import numpy.random as npr
@@ -16,7 +16,7 @@ import time
 
 import pickle as pkl
 
-from setproctitle import setproctitle
+# from setproctitle import setproctitle
 
 import torch
 from torch.autograd import Function, Variable

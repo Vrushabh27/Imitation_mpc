@@ -8,7 +8,7 @@ from torch.nn.parameter import Parameter
 
 import numpy as np
 
-from mpc import util
+from .. import util
 
 import os
 

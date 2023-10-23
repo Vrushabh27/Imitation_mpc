@@ -1,3 +1,5 @@
+import sys
+import os
 import torch
 from torch.autograd import Function, Variable
 import torch.nn.functional as F
@@ -6,7 +8,7 @@ from torch.nn.parameter import Parameter
 
 import numpy as np
 
-from mpc import util
+from .. import util
 
 import os
 

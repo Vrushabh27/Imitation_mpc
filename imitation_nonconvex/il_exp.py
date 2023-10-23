@@ -10,11 +10,11 @@ from torch.nn.utils import parameters_to_vector
 from torch.utils.data import TensorDataset, DataLoader
 
 
-from mpc import mpc
-from mpc.mpc import GradMethods, QuadCost
-from mpc.dynamics import NNDynamics
-import mpc.util as eutil
-from mpc.env_dx import pendulum, cartpole
+# from mpc import mpc
+from mpc.mpc.mpc import GradMethods, QuadCost
+from mpc.mpc.dynamics import NNDynamics
+import mpc.mpc.util as eutil
+from mpc.mpc.env_dx import pendulum, cartpole
 
 import numpy as np
 import numpy.random as npr
